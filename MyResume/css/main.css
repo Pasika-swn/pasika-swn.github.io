@@ -1,12 +1,9 @@
-body {
-    font-family: 'Work Sans', sans-serif;
-}
-
 .about {
-    font-size: 18px;
-    font-weight: 300;
-    color: gray;
+font-size: 18px;
+    font-weight: 300; /*light*/
+    color: grey;
     margin-bottom: 24px;
+
 }
 
 .avatar {
@@ -15,34 +12,19 @@ body {
     margin-bottom: 40px;
     border-radius: 50%;
     object-fit: cover;
-    /* object-fit ใส่เพื่อไม่ให้รูปโดนยืดเบี้ยว ถ้ารูปเป็นผืนผ้า */
-    box-shadow: 10px 10px 0px 5px black;
+    box-shadow: 10px 10px 0px 0px black;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
 }
 
 .button {
     background-color: black;
     color: white;
     padding: 12px 24px;
-    text-transform: uppercase;
     text-decoration: none;
-}
 
-.container {
-    /* background-color: lightgray; */
-    background-image: linear-gradient(to right, rgba(255,255,255, 1), rgba(255,255,255, 0.6)), url('https://images.unsplash.com/photo-1683768814494-5326ac8d7437?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1331&q=80');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    min-height: 100vh; 
-    /* vh = viewport height เต็มหน้าเว็ป */
-    padding: 128px;
-}
-
-/* วิธีลดแพดดิ้งเมื่อหน้าจอขนาดเล็กเท่านั้น */
-@media screen and (max-width: 768px) {
-    .container {
-        padding: 48px;
-    }
 }
 
 .contact {
@@ -51,21 +33,31 @@ body {
 
 .contact-icon {
     margin-right: 12px;
-    width: 16px;
+    width: 16px
 }
 
 .contact-item {
     margin-bottom: 4px;
 }
 
-.content {
-    max-width: 500px;
+.container {
+    /* background-color: lightgray; */
+    min-height: 100vh;
+    padding: 128px;
+    background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0.7)),url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
 }
 
-.name {
-    font-size: 48px;
-    text-transform: uppercase;
-    margin-bottom: 8px;
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 48px;
+    }
+}
+
+.content {
+    max-width: 300px;
 }
 
 .job {
@@ -74,8 +66,15 @@ body {
     margin-bottom: 24px;
 }
 
+.name {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
 @media screen and (max-width: 768px) {
     .name {
-    font-size: 36px;
+        font-size: 36px;
     }
 }
+
